@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*  */
+header {
+  padding: 50px;
+  display: flex;
+}
+
+header .container {
+  display: flex;
+  width: 100%;
+  /* position: relative; */
+}
+
+header .container .space {
+  margin-top: 40px;
+  /* position: relative; */
+  /* top: 50%; */
+  transform: translateY(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: antiquewhite;
+}
+
+header .container .links {
+  width: 55%;
+  text-align: center;
+  background-color: #3f556a91;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  right: 0;
+}
+
+header .container ul {
+  list-style: none;
+}
+
+header .container ul li {
+  padding: 10px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  transition: .3s;
+  cursor: pointer;
+  position: relative;
+}
+
+header .container ul li::after {
+  /* content: " "; */
+  width: 100%;
+  height: 2px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transition: 0.5s;
+}
+
+header .container .links li:hover::after {
+  /* border-bottom: 1px solid white; */
+  content: "";
+}
+
+header .container ul li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+/* end header */
+
+/* start content */
+.content {
+  margin: 100px;
+  width: 100%;
+}
+
+.content .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding: 10px;
+  text-align: center;
+  /* background-color: aqua; */
+}
+
+.content .container .left p {
+  line-height: 2;
+  color: #f0f8ffad;
+  font-size: 30px;
+}
+
+.content .container .left h2 {
+  font-size: 90px;
+  line-height: 2;
+  font-weight: lighter;
+}
+
+.content .container .left h2+p {
+  font-size: large;
+  /* max-width: 73%; */
+  text-align: center;
+  margin: 0 120px;
+  color: #f0f8ffad;
+}
+
+.content .container .right {
+  position: relative;
+}
+
+.content .container .right .cont {
+  background-color: antiquewhite;
+  color: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
